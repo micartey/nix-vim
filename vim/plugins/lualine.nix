@@ -38,7 +38,6 @@
           {
             "filetype",
             icon_only = true,
-            separator = { left = "" },
             padding = { left = 1, right = 0 },
           }
         ''

@@ -1,6 +1,6 @@
 {
   vim.options = {
-    colorcolumn = "80";
+    colorcolumn = "";
     termguicolors = true;
     showmode = false;
     cursorline = true;
