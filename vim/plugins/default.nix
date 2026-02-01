@@ -13,6 +13,7 @@
     ./indent-blankline.nix
     ./lean.nix
     ./lualine.nix
+    ./neo-tree.nix
     ./nvim-soil.nix
     ./neogit.nix
     ./nvim-autopairs.nix
