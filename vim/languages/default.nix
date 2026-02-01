@@ -5,6 +5,7 @@
     ./bash.nix
     ./c.nix
     ./dafny.nix
+    ./elixir.nix
     ./go.nix
     ./haskell.nix
     ./java.nix
