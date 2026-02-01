@@ -1,3 +1,5 @@
 {
-  vim.assistant.copilot.enable = true;
+  vim.assistant.copilot = {
+    enable = true;
+  };
 }

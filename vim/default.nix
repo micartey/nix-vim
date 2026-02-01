@@ -1,6 +1,8 @@
 # https://notashelf.github.io/nvf/
 # https://notashelf.github.io/nvf/options.html
 
+{ lib, ... }:
+
 {
   imports = [
     ./languages
@@ -14,6 +16,15 @@
     ./perf.nix
     ./theme.nix
   ];
+
+  # Disable deprecation warnings
+  warnings = [ ];
+
+  # Disable vim.deprecate to suppress runtime deprecation warnings from plugins
+  vim.luaConfigRC.deprecation_suppress = lib.nvim.dag.entryAnywhere ''
+    -- Suppress deprecation warnings from plugins
+    vim.deprecate = function() end
+  '';
 
   # vim = {
   #   # lsp = {
