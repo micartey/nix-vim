@@ -24,6 +24,7 @@
     ./sidekick.nix
     ./telescope.nix
     ./todo-comments.nix
+    ./toggleterm.nix
     ./trouble.nix
     ./wakatime.nix
     ./whichKey.nix
