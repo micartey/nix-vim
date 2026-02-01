@@ -2,7 +2,7 @@
   vim.options = {
     colorcolumn = "80";
     termguicolors = true;
-    showmode = true;
+    showmode = false;
     cursorline = true;
 
     number = true;

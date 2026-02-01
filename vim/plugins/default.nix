@@ -12,6 +12,7 @@
     ./harpoon.nix
     ./indent-blankline.nix
     ./lean.nix
+    ./lualine.nix
     ./nvim-soil.nix
     ./neogit.nix
     ./nvim-autopairs.nix
