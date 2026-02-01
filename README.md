@@ -5,7 +5,7 @@
 > I do not recommend anyone to use it since it is heavily personalised to my needs.
 > I share this repository to simplify tracking, sharing of errors and config parts, as well of ease of access on new setups.
 
-## Synopsis
+### Synopsis
 
 ```
 .
@@ -17,7 +17,7 @@
 │   └── some more general settings
 ```
 
-## Run vim
+### Run vim
 
 You can run this version of nvim with the following command:
 
@@ -26,4 +26,19 @@ nix run github:micartey/nix-viro.#vim
 
 # or inside the repository:
 nix run .#vim
+```
+
+### Add to nix
+
+Or you can add it to your existing nix project using:
+
+```nix
+nix-vim = {
+  url = "github:micartey/nix-vim";
+  inputs.nixpkgs.follows = "nixpkgs";
+};
+
+# ...
+
+inputs.nix-vim.packages.${pkgs.system}.vim
 ```
