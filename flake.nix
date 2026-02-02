@@ -40,7 +40,7 @@
         let
           pkgs = nixpkgs.legacyPackages.${system};
         in
-        {
+        rec {
           vim =
             (nvf.lib.neovimConfiguration {
               inherit pkgs;
@@ -49,6 +49,7 @@
                 rinputs = inputs;
               };
             }).neovim;
+          default = vim;
         }
       );
     };
