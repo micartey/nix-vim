@@ -2,6 +2,27 @@
   vim.keymaps = [
     {
       mode = "n";
+      key = "<C-s>";
+      action = ":wa<CR>";
+      silent = true;
+      desc = "Save all files";
+    }
+    {
+      mode = "i";
+      key = "<C-s>";
+      action = "<Esc>:wa<CR>";
+      silent = true;
+      desc = "Save all files";
+    }
+    {
+      mode = "v";
+      key = "<C-s>";
+      action = "<Esc>:wa<CR>";
+      silent = true;
+      desc = "Save all files";
+    }
+    {
+      mode = "n";
       key = "<C-j>";
       action = ":m .+1<CR>==";
       silent = true;
