@@ -3,7 +3,6 @@
     ./avante.nix
     ./blink-cmp.nix
     ./cellular-automaton.nix
-    ./copilot.nix
     ./diffview-nvim.nix
     ./fff.nix
     ./fidget-nvim.nix
