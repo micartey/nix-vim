@@ -22,10 +22,10 @@
 You can run this version of nvim with the following command:
 
 ```bash
-nix run github:micartey/nix-viro.#vim
+nix run github:micartey/nix-vim
 
 # or inside the repository:
-nix run .#vim
+nix run .
 ```
 
 ### Add to nix
@@ -39,6 +39,7 @@ nix-vim = {
 };
 
 # ...
+# Then add the following package to either home.packages or environment.systemPackages
 
 inputs.nix-vim.packages.${pkgs.system}.vim
 ```

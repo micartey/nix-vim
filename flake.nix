@@ -49,7 +49,19 @@
                 rinputs = inputs;
               };
             }).neovim;
+
           default = vim;
+
+          vim-portable =
+            pkgs.runCommand "vim-portable"
+              {
+                pname = "vim-portable";
+                version = "0.1.0";
+              }
+              ''
+                mkdir -p $out/bin
+                ln -s ${vim}/bin/nvim $out/bin/vim-portable
+              '';
         }
       );
     };
