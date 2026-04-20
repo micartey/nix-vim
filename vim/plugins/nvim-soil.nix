@@ -5,7 +5,7 @@ let
     name = "nvim-soil";
     pname = "nvim-soil";
     src = pkgs.fetchFromGitHub {
-      owner = "javiorfo";
+      owner = "antonpetrovmain";
       repo = "nvim-soil";
       rev = "e464c5532b2737e2a489526bdc984e1b17d6ae26";
       hash = "sha256-mlcp8IRg4s2H7UjCi1SvwmRMnDIeAbgbTiG9afAYiWI=";
